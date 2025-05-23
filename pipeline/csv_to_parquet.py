@@ -65,7 +65,7 @@ def process_csv(csv_file: str, output_dir: str, bucket_name: str, s3_key: str) -
     # Convert the DataFrame to JSON format
     json_file = os.path.join(output_dir, "internacional_education_costs.json")
     # Save the DataFrame to JSON format
-    df.to_json(json_file, orient='records', lines=True)
+    df.to_json(json_file, orient='records', lines=False)
     parquet_file = os.path.join(output_dir, "internacional_education_costs.parquet")
 
     # Convert DataFrame to Parquet format

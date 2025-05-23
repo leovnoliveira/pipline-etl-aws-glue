@@ -51,7 +51,7 @@ cd pipeline-etl-aws-glue
 Exemplo de execução no script `./pipeline/main.py`
 
 
-```
+{python}```
 from pipeline.csv_to_parquet import process_csv
 
 def main():
